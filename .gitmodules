@@ -67,9 +67,6 @@
 [submodule "home/.vim/bundle/bufexplorer"]
 	path = home/.vim/bundle/bufexplorer
 	url = http://github.com/vim-scripts/bufexplorer.zip.git
-[submodule "home/.vim/bundle/autoclose"]
-	path = home/.vim/bundle/autoclose
-	url = http://github.com/Townk/vim-autoclose.git
 [submodule "home/.vim/bundle/asneeded"]
 	path = home/.vim/bundle/asneeded
 	url = http://github.com/vim-scripts/AsNeeded.git
