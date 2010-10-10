@@ -14,9 +14,9 @@ set whichwrap+=<,>,h,l   " cursor keys also wrap
 
 " spaces instead of tabs
 " prefer 3 spaces
-set softtabstop=3
-set tabstop=3
-set shiftwidth=3
+set softtabstop=2
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
 set autoread     " automatically reload a file if it's changed outside vim
@@ -43,8 +43,27 @@ set textwidth=80 " 80-character lines maximum
 "     instead (if possible).
 set formatoptions=tcrqn21
 
+let g:netrw_keepdir = 0
+
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+set wildmenu
+set wildignore=*.mp3,Music,.jpg,*.png
+
+inoremap  <Up>     <NOP>
+inoremap  <Down>   <NOP>
+inoremap  <Left>   <NOP>
+inoremap  <Right>  <NOP>
+noremap   <Up>     <NOP>
+noremap   <Down>   <NOP>
+noremap   <Left>   <NOP>
+noremap   <Right>  <NOP>
+
 " Automatically restore cursor position when possible
 autocmd BufReadPost *
    \ if line("'\"") > 1 && line("'\"") <= line("$") |
    \ exe "normal! g`\"" |
    \ endif
+
+

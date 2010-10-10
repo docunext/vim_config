@@ -27,7 +27,7 @@ let mapleader = ";"
 " T - trunctate other messages in the middle if they are too long to fit on
 " the command line. "..." will appear in the middle.
 " I - don't give the intro message when starting Vim.
-set shortmess=filmnrxtTI
+set shortmess=atfilmnrxtTI
 
 " turn filetype settings off so that stuff gets loaded from pathogen
 filetype off
