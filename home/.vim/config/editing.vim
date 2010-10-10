@@ -18,6 +18,8 @@ set softtabstop=2
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set nomodeline
+set modelines=0
 
 set autoread     " automatically reload a file if it's changed outside vim
 
@@ -41,9 +43,14 @@ set textwidth=80 " 80-character lines maximum
 "     for the rest of the paragraph, instead of the indent of the first line.
 " 1 - Don't break a line after a one-letter word. It's broken before it
 "     instead (if possible).
-set formatoptions=tcrqn21
+set formatoptions=crqn21
 
-let g:netrw_keepdir = 0
+let g:netrw_keepdir = 1
+let g:netrw_silent = 1
+let g:netrw_use_noswf=0
+let g:netrw_fastbrowse=2
+let g:netrw_use_errorwindow=0
+set ch=2
 
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
@@ -66,4 +73,5 @@ autocmd BufReadPost *
    \ exe "normal! g`\"" |
    \ endif
 
-
+:let loaded_netrw = 1
+:let loaded_netrwPlugin = 1
