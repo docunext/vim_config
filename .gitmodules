@@ -76,3 +76,6 @@
 [submodule "home/.vim/bundle/ack"]
 	path = home/.vim/bundle/ack
 	url = http://github.com/mileszs/ack.vim.git
+[submodule "home/.vim/bundle/closetag"]
+	path = home/.vim/bundle/closetag
+	url = git://github.com/docunext/closetag.vim.git
