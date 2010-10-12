@@ -73,5 +73,5 @@ autocmd BufReadPost *
    \ exe "normal! g`\"" |
    \ endif
 
-:let loaded_netrw = 1
-:let loaded_netrwPlugin = 1
+let loaded_netrw = 1
+let loaded_netrwPlugin = 1
