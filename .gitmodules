@@ -79,6 +79,3 @@
 [submodule "home/.vim/bundle/closetag"]
 	path = home/.vim/bundle/closetag
 	url = git://github.com/docunext/closetag.vim.git
-[submodule "home/.vim/bundle/xml"]
-	path = home/.vim/bundle/xml
-	url = git://github.com/docunext/xml.vim.git
