@@ -32,12 +32,18 @@ set shortmess=atfilmnrxtTI
 " turn filetype settings off so that stuff gets loaded from pathogen
 filetype off
 
+let xml_tag_completion_map = "<C-l>"
 " use pathogen to load plugins/etc.
 call pathogen#runtime_append_all_bundles()
 
 " turn on all filetype settings, syntax, etc.
 filetype plugin indent on
 syntax on
+
+if has('gui_running')
+    set guioptions-=T   " Get rid of toolbar "
+    set guioptions-=m   " Get rid of menu    "
+endif
 
 " load everything else in its own config file
 runtime! config/**/*
