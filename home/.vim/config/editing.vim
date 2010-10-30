@@ -72,6 +72,3 @@ autocmd BufReadPost *
    \ if line("'\"") > 1 && line("'\"") <= line("$") |
    \ exe "normal! g`\"" |
    \ endif
-
-let loaded_netrw = 1
-let loaded_netrwPlugin = 1

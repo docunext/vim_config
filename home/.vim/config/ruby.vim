@@ -17,5 +17,5 @@ fun LoadRubyKeybindings()
 
    " set the foldmethod to 'syntax'
    setlocal foldmethod=syntax
-   setlocal foldlevel=2
+   setlocal foldlevel=3
 endfun
