@@ -3,8 +3,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
 " use the desert256 colorscheme (works better with console than zenburn)
-colorscheme desert256
-
+"colorscheme desert256
+colorscheme desert
 set laststatus=2   " always display a status line
 set number         " show line numbers
 set ruler          " display coordinates in status bar

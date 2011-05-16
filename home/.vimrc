@@ -61,3 +61,4 @@ map #mtg :%!mtsend.py -q -G
 map #mte :w !mtsend.py -E -<CR>
 " (R)ebuild- rebuild specified entry
 map #mtr :!mtsend.py -R
+
