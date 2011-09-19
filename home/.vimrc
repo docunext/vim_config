@@ -62,3 +62,5 @@ map #mte :w !mtsend.py -E -<CR>
 " (R)ebuild- rebuild specified entry
 map #mtr :!mtsend.py -R
 
+
+set wildmode=longest,list:longest,list:full
