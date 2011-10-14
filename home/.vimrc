@@ -64,3 +64,4 @@ map #mtr :!mtsend.py -R
 
 
 let g:syntastic_disabled_filetypes = ['perl', 'html']
+set wildmode=longest,list:longest,list:full
