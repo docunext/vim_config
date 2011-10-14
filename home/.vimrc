@@ -52,7 +52,7 @@ runtime! config/**/*
 " (T)emplate- reads in the template file
 map #mtt :0r ~/.config/mtos/empty.html<CR>:set filetype=html<CR>A
 " (N)ew- posts new entry
-map #mtn :w !mtsend.py -N<CR>
+"map #mtn :w !mtsend.py -N<CR>
 " (G)et- retrieves latest post, enables HTML syntax highlighting
 map #mtG :%!mtsend.py -q -G -<CR>:set filetype=html<CR>
 " (g)et- retrieves specified post
@@ -63,4 +63,5 @@ map #mte :w !mtsend.py -E -<CR>
 map #mtr :!mtsend.py -R
 
 
+let g:syntastic_disabled_filetypes = ['perl', 'html']
 set wildmode=longest,list:longest,list:full
