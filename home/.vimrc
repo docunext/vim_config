@@ -48,20 +48,7 @@ endif
 " load everything else in its own config file
 runtime! config/**/*
 
-" Shortcuts for editing Movable Type journal using mtsend.py
-" (T)emplate- reads in the template file
-map #mtt :0r ~/.config/mtos/empty.html<CR>:set filetype=html<CR>A
-" (N)ew- posts new entry
-"map #mtn :w !mtsend.py -N<CR>
-" (G)et- retrieves latest post, enables HTML syntax highlighting
-map #mtG :%!mtsend.py -q -G -<CR>:set filetype=html<CR>
-" (g)et- retrieves specified post
-map #mtg :%!mtsend.py -q -G
-" (E)dit- uploads new revision to latest post
-map #mte :w !mtsend.py -E -<CR>
-" (R)ebuild- rebuild specified entry
-map #mtr :!mtsend.py -R
-
-
-let g:syntastic_disabled_filetypes = ['perl', 'html']
+let g:syntastic_disabled_filetypes = ['perl', 'html', 'ruby']
 set wildmode=longest,list:longest,list:full
+
+set nofoldenable 
