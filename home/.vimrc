@@ -63,5 +63,7 @@ map #mte :w !mtsend.py -E -<CR>
 map #mtr :!mtsend.py -R
 
 
-let g:syntastic_disabled_filetypes = ['perl', 'html']
+let g:syntastic_disabled_filetypes = ['perl', 'html', 'ruby']
 set wildmode=longest,list:longest,list:full
+
+set nofoldenable 
