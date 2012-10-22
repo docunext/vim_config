@@ -48,6 +48,7 @@ endif
 " load everything else in its own config file
 runtime! config/**/*
 
+
 let g:syntastic_disabled_filetypes = ['perl', 'html', 'ruby']
 set wildmode=longest,list:longest,list:full
 
